@@ -1,0 +1,268 @@
+{
+  "id": "80699712-900b-4192-90ac-2fd46562c4de",
+  "version": "2.0",
+  "name": "siccred3",
+  "url": "https://www.sicredi.com.br",
+  "tests": [{
+    "id": "c4d407cd-b2be-4eaf-9c65-87778b657b07",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f8403bb1-f97f-4ce7-8a1d-d5b716ba5431",
+      "comment": "",
+      "command": "open",
+      "target": "/html/ferramenta/simulador-investimento-poupanca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ebd8b24-104d-41f0-bac3-beb9722c4ba5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "654x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98cc8426-b364-43aa-9d87-6442c230d90a",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=valorAplicar",
+      "targets": [
+        ["id=valorAplicar", "id"],
+        ["name=valorAplicar", "name"],
+        ["css=#valorAplicar", "css:finder"],
+        ["xpath=//input[@id='valorAplicar']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bfa0071-15c7-408d-a7a1-f177671c6493",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=valorInvestir",
+      "targets": [
+        ["id=valorInvestir", "id"],
+        ["name=valorInvestir", "name"],
+        ["css=#valorInvestir", "css:finder"],
+        ["xpath=//input[@id='valorInvestir']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26a71ecb-2ddd-422e-8f4a-29780ad604f8",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=tempo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "112c17ad-e6e5-43fa-a040-5d22a2d91752",
+      "comment": "",
+      "command": "type",
+      "target": "id=valorAplicar",
+      "targets": [],
+      "value": "3,00"
+    }, {
+      "id": "e028d1e1-e757-4340-b475-c3e63a8089db",
+      "comment": "",
+      "command": "type",
+      "target": "id=valorInvestir",
+      "targets": [],
+      "value": "3,00"
+    }, {
+      "id": "1f11cf50-9d38-42c0-aa4b-2c177c918e6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=tempo",
+      "targets": [
+        ["id=tempo", "id"],
+        ["name=tempo", "name"],
+        ["css=#tempo", "css:finder"],
+        ["xpath=//input[@id='tempo']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "f957dde8-0d76-47df-a9be-f7ededb9e6bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btSelect > .btn",
+      "targets": [
+        ["css=.btSelect > .btn", "css:finder"],
+        ["xpath=//form[@id='formInvestimento']/div[4]/div[2]/div[2]/a/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8b5845e-3f39-4634-8f8a-c792f7591bed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Anos",
+      "targets": [
+        ["linkText=Anos", "linkText"],
+        ["css=.listaSelect > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Anos')]", "xpath:link"],
+        ["xpath=//form[@id='formInvestimento']/div[4]/div[2]/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Anos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "220c7296-2fff-497b-ad36-7cc4fb326512",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnSimular",
+      "targets": [
+        ["css=.btnSimular", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[5]/ul/li[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95390ac2-0c17-4fab-9abc-1d2f6945855e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=valorAplicar-error",
+      "targets": [
+        ["id=valorAplicar-error", "id"],
+        ["css=#valorAplicar-error", "css:finder"],
+        ["xpath=//label[@id='valorAplicar-error']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[2]/div[2]/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Valor mínimo de 20.00')]", "xpath:innerText"]
+      ],
+      "value": "Valor mínimo de 20.00"
+    }, {
+      "id": "1b1f7965-4429-4a9b-98be-a04459dc27f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=valorInvestir-error",
+      "targets": [
+        ["id=valorInvestir-error", "id"],
+        ["css=#valorInvestir-error", "css:finder"],
+        ["xpath=//label[@id='valorInvestir-error']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[3]/div[2]/label[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/label[2]", "xpath:position"]
+      ],
+      "value": "Valor mínimo de 20.00"
+    }, {
+      "id": "8035691a-7932-4eae-8ab9-1e35fbe52f39",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Limpar formulário",
+      "targets": [
+        ["linkText=Limpar formulário", "linkText"],
+        ["css=.btnLimpar", "css:finder"],
+        ["xpath=//form[@id='formInvestimento']/div[5]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[4]", "xpath:href"],
+        ["xpath=//div[5]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Limpar formulário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57dff099-f727-4f76-80cd-b3a97d8addeb",
+      "comment": "",
+      "command": "click",
+      "target": "name=perfil",
+      "targets": [
+        ["name=perfil", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='perfil']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b68e5fc8-ab76-4128-9b07-ab276645279d",
+      "comment": "",
+      "command": "type",
+      "target": "id=valorAplicar",
+      "targets": [],
+      "value": "70,00"
+    }, {
+      "id": "bb1797dd-7288-403e-93ab-861b1b6227c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=valorInvestir",
+      "targets": [],
+      "value": "40,00"
+    }, {
+      "id": "4b6503ea-79c8-4482-a469-a60771a67aa0",
+      "comment": "",
+      "command": "type",
+      "target": "id=tempo",
+      "targets": [
+        ["id=tempo", "id"],
+        ["name=tempo", "name"],
+        ["css=#tempo", "css:finder"],
+        ["xpath=//input[@id='tempo']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "a78e37c3-121d-4ec7-bef3-3944314ff0df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btSelect > .btn",
+      "targets": [
+        ["css=.btSelect > .btn", "css:finder"],
+        ["xpath=//form[@id='formInvestimento']/div[4]/div[2]/div[2]/a/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f31583a1-c50b-41f0-84d9-e8fc83d867fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Anos",
+      "targets": [
+        ["linkText=Anos", "linkText"],
+        ["css=.listaSelect > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Anos')]", "xpath:link"],
+        ["xpath=//form[@id='formInvestimento']/div[4]/div[2]/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Anos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6174b85-7df5-4e47-ad0b-93b3479dbad0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnSimular",
+      "targets": [
+        ["css=.btnSimular", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formInvestimento']/div[5]/ul/li[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "311679f2-0bfc-466f-b685-b08bc8384359",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnRefazer",
+      "targets": [
+        ["css=.btnRefazer", "css:finder"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[5]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fcfec6bf-7100-4e7f-bbec-047a7c257790",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4d407cd-b2be-4eaf-9c65-87778b657b07"]
+  }],
+  "urls": ["https://www.sicredi.com.br/"],
+  "plugins": []
+}
+
